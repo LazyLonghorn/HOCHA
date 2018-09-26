@@ -39,8 +39,12 @@
 }
 
 /*Index Content*/
+section{
+	background-color: #F6F6F6;
+	margin-top: -30px;
+}
 #indexContent>#searchForm{
-	margin-top: -40px;	
+	margin-top: -10px;	
 }
 #indexContent>#searchForm>.form-group{
 	width: 100%;
@@ -67,4 +71,165 @@
 	border-radius:5px;
 	border: 0.5px solid grey;
 }
+/*Common Modal*/
+#indexContent .modal-dialog>.modal-content{
+	width:400px;
+	height:600px;
+	margin : 0 auto;
+}
+#indexContent .modal-dialog>.modal-content>.modal-header{
+	border-bottom: none;
+}
+#indexContent .modal-dialog>.modal-content>.modal-header>h4{
+	margin: 0 auto;
+	margin-top: 30px;
+	text-align:center;
+}
+#indexContent .modal-dialog>.modal-content>.modal-header>h4:nth-of-type(2){
+	margin-top: 50px;
+}
+#indexContent .modal-dialog>.modal-content>.modal-body .form-group{
+	width:95%;
+	margin:0 auto;
+}
+#indexContent .modal-dialog>.modal-content>.modal-body .form-group>input{
+	height : 45px;
+	background-color:#F6F6F6;
+	border: none;
+	margin-bottom:10px;
+}
+#indexContent .modal-dialog>.modal-content>.modal-body .form-group>input[type=submit]{
+	margin-top:30px;
+	background-color:#F15F5F;
+	color:white;
+	font-weight: bold;
+}
+#indexContent .modal-dialog>.modal-content>.modal-body>.info_div>ul{
+	list-style-type: none;
+}
+#indexContent .modal-dialog>.modal-content>.modal-body>.info_div>ul>li{
+	float: left;
+}
+#indexContent .modal-dialog>.modal-content>.modal-body>.info_div>ul>.line{
+	border-bottom: 1px solid #e5e5e5;
+	width: 40%;
+}
+#indexContent .modal-dialog>.modal-content>.modal-body>.info_div>ul>li:nth-of-type(2){
+	width: 20%;
+	margin: 0 auto;
+	margin-top: -10px;
+	text-align: center;
+}
+
+/*Login Modal*/
+#indexContent>#loginModal>.modal-dialog>.modal-content{
+	width:400px;
+	height:600px;
+	margin : 0 auto;
+}
+#indexContent>#loginModal>.modal-dialog>.modal-content>.modal-body>.info_div{
+	margin-top:30px;
+}
+#indexContent>#loginModal>.modal-dialog>.modal-content>.modal-body>.info_div>.info{
+	margin:0 auto;
+	margin-bottom:20px;
+	text-align:center;
+}
+#indexContent>#loginModal>.modal-dialog>.modal-content>.modal-body>.info_div>.info:nth-of-type(2){
+	padding-bottom: 30px;
+}
+
+/*Join Modal*/
+#indexContent>#joinModal>.modal-dialog>.modal-content{
+	width:400px;
+	height:650px;
+	margin : 0 auto;
+}
+#indexContent>#joinModal>.modal-dialog>.modal-content>.modal-body .form-group>.agree>#agreeChk{
+	display:inline;
+	width:20px;
+	height:20px;
+	border:none;
+}
+#indexContent>#joinModal>.modal-dialog>.modal-content>.modal-body .form-group>.agree>span:first-of-type {
+	margin-left:10px;	
+}
+#indexContent>#joinModal>.modal-dialog>.modal-content>.modal-body .form-group>.agree>span:last-of-type {
+	display:block;
+	margin-left:30px;	
+}
+#indexContent>#joinModal>.modal-dialog>.modal-content>.modal-body>.info_div>.info{
+	margin:0 auto;
+	margin-top:30px;
+	margin-bottom:30px;
+	text-align:center;
+}
+
+
+/*Fixed footer*/
+#default_footer{
+	width: 110%;
+	margin-left: -15px;
+}
+#default_footer>.footer{
+	height: 250px;
+}
+#default_footer>.footer>div{
+	width: 43%;
+	height: 30%;
+	margin-left: 25%;
+}
+#default_footer>.footer>div:first-of-type>p{
+	padding-top: 20px;
+	padding-left: 10px;
+}
+#default_footer>.footer>div:first-of-type>p>span{
+	color:#FF5E00;
+	font-weight: bold;
+}
+#default_footer>.footer>div:last-of-type{
+	font-size: 10px;
+	font-weight: bold;
+}
+#default_footer>.footer>div:last-of-type>p{
+	padding-left: 10px;
+	color:#BDBDBD;
+	font-weight: bold;
+}
+#default_footer>.footer>div:last-of-type>p>span>a{
+	color:#5D5D5D;
+}
+#default_footer>.navbar-fixed-bottom{
+	height: 18%;
+}
+#default_footer>.navbar-fixed-bottom>.container-fluid>.navbar-header{
+	margin-top:18px;
+	margin-left:25px;
+	color:white;
+}
+#default_footer>.navbar-fixed-bottom>.container-fluid>.navbar-right{
+	margin-top:23px;
+	margin-right:25px;
+}
+#default_footer>.navbar-fixed-bottom>.container-fluid>.navbar-right>li:first-of-type{
+	margin-right:25px;
+}
+#default_footer>.navbar-fixed-bottom>.container-fluid>.navbar-right>li:first-of-type>button{
+	background-color: rgba(255,255,255,0.0);
+	border-color: rgba(255, 255,255,0.0);
+	color:white;
+}
+#default_footer>.navbar-fixed-bottom>.container-fluid>.navbar-right>li>button{
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
 

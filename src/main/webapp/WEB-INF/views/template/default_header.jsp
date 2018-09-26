@@ -16,7 +16,8 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><button class="btn navbar-btn" data-toggle="modal" 
 								data-target="#loginModal">로그인</button></li>
-						<li><button class="btn btn-danger navbar-btn">회원가입</button></li>
+						<li><button class="btn btn-danger navbar-btn" data-toggle="modal"
+								data-target="#joinModal">회원가입</button></li>
 					</ul>
 				</div>
 			</div>
