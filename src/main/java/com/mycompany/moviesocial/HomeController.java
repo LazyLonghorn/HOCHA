@@ -27,5 +27,22 @@ public class HomeController {
 	public String index(Model model) {
 		return "index"; 
 	}  
-	 
+	
+	// 상세정보 페이지
+	@RequestMapping("/view.do")
+	public String mainView() {
+		return "mainview";
+	}
+	
+	// 상세정보 페이지
+	@RequestMapping("/profile.do")
+	public String profile() {
+		return "profile";
+	}
+	
+	@RequestMapping("/naver.do")
+	public String naver() {
+		return "naverLogin";
+	}
+	
 }

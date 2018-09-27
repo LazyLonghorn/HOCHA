@@ -1,0 +1,327 @@
+@charset "UTF-8";
+
+#mainview_header {
+	background-color: black;
+}
+
+#mainview_header > .jumbotron{ 
+	padding-top: 0px;
+   	padding-left: 0px;
+  	padding-right: 0px;
+	height: 500px;
+	margin-bottom: 0px;
+	background-color:black;
+	background-image: url(../images/mil.jpg);
+   	background-repeat:no-repeat;
+   	background-position:center;
+}
+
+#content > .jumbotron{
+	background-color: white;
+	text-align: center;  
+}
+@media (min-width: 768px){
+	#content > .jumbotron > .maxWidth{
+		width:960px;
+	}
+}
+@media (min-width: 400px){ 
+	#content > .jumbotron > .maxWidth > .mainimage {
+		width:200px;
+		height:300px;  
+		display: inline-block;
+	 
+	} 
+}
+#content > .jumbotron > .maxWidth > .maincontent {
+	display: inline-block;
+	text-align: left;
+	margin-left: 30px; 
+}
+
+#content > .jumbotron > .maxWidth > .maincontent > .subject{
+	font-size: 40px;
+	font-weight: bold;
+}
+
+#content > .jumbotron > .maxWidth > .maincontent > .stars {
+}
+
+#etcbutton{
+	background-color: #FFFF48; 
+}
+
+@media (min-width: 400px){ 
+	.starpu {
+		width:200px;
+		display: block;
+		margin-top: 10px;
+	} 
+}
+
+.star { 
+	display: table-cell;
+    width: 35px;
+	height: 30px; 
+    background-image: url(../images/stars.png);
+    background-size: contain;
+    background-repeat:no-repeat;
+   	background-position:center;
+}
+
+#infomation {
+	background-color: #EAEAEA;
+}
+ 
+#information > .jumbotron {	
+	background-color: #EAEAEA;
+	height: auto;
+}
+@media (min-width: 1200px){    
+	#information > .jumbotron > .info_box {
+			margin-top: 20px;
+			width:1200px;
+			background-color: white;
+			height: auto;
+			border-radius: 10px;
+			margin:auto;
+		} 
+}
+ 
+@media (min-width: 400px){
+	#information > .jumbotron > .info_box > .basic_box{
+		background-color: white;
+		min-height: 40px;
+		height: auto;
+	}   
+}
+
+@media (min-width: 400px){
+	#information > .jumbotron > .info_box > .basic_box > .basic_info{
+		padding-top: 10px;
+		height: 40px;
+	}   
+}
+ 
+#information > .jumbotron > .info_box > .basic_box > .basic_info > #basic_span {
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: 20px;
+	float: left;
+}
+
+#information > .jumbotron > .info_box > .basic_box > .basic_info > #basic_plus {
+	font-size: 20px;
+	color: #FF4848;
+	float: right;
+	margin-right: 20px;
+	line-height: 40px;
+}
+
+@media (min-width: 400px){
+	#information > .jumbotron > .info_box > .basic_box > .basic_movie{
+	    margin-top: 20px;
+	    margin-left: 20px;
+	}
+}
+
+#information > .jumbotron > .info_box > .basic_box > .basic_movie > span{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media (min-width: 400px){
+	#information > .jumbotron > .info_box > .basic_box > .basic_content{
+	    margin-top: 20px;
+	    margin-left: 20px;
+	}
+}
+
+#information > .jumbotron > .info_box > .basic_box > .basic_content > span{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media (min-width: 400px){
+	#information > .jumbotron > .info_box > .appear_box{
+		background-color: white;
+		min-height: 40px;
+		height: auto;
+	}   
+}
+
+@media (min-width: 400px){
+	#information > .jumbotron > .info_box > .appear_box > .appear_info{
+		height: 40px;
+		    padding-top: 5px;
+	}   
+}
+ 
+#information > .jumbotron > .info_box > .appear_box > .appear_info > #appear_span {
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: 20px; 
+	float: left;
+}
+
+@media (min-width: 400px){ 
+	#information > .jumbotron > .info_box > .appear_box > .appear_content{
+		height: auto;
+	}   
+}
+
+
+#information > .jumbotron > .info_box > .appear_box > .appear_content > .appear_ul{
+	height: auto;
+}   
+
+#information > .jumbotron > .info_box > .appear_box > .appear_content > .appear_ul > .appear_li{
+	width: 45%;
+	margin: 20px 0;
+	display: inline-flex;
+}   
+
+@media (min-width: 400px){ 
+#information > .jumbotron > .info_box > .appear_box > .appear_content > .appear_ul > .appear_li > .appear_infomation{
+	border-bottom: 1px solid #EAEAEA;
+	}
+}
+
+#information > .jumbotron > .info_box > .appear_box > .appear_content > .appear_ul > .appear_li > .appear_infomation > span:nth-of-type(1){
+	font-size: 20px;
+	font-weight: 500;
+	display: block;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+#information > .jumbotron > .info_box > .appear_box > .appear_content > .appear_ul > .appear_li > .appear_infomation > span:nth-of-type(2){
+	margin-left: 5px;
+}     
+
+@media (min-width: 400px){
+	#information > .jumbotron > .info_box > .chart_box{
+		background-color: white;
+		min-height: 40px;
+		height: auto;
+	}   
+}
+
+@media (min-width: 400px){
+	#information > .jumbotron > .info_box > .chart_box > .chart_info{
+		padding-top: 10px;
+		height: 40px;
+	}   
+}
+
+#information > .jumbotron > .info_box > .chart_box > .chart_info > #chart_span {
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: 20px;
+	float: left;
+}
+
+@media (min-width: 700px){
+	#information > .jumbotron > .info_box > .chart_box > .chart_graph{
+		width:700px;
+		height:400px;
+		margin: 0 auto;
+	}
+}
+     
+@media (min-width: 700px){
+	#information > .jumbotron > .info_box > .chart_box > .chart_graph > .chart_div div{
+		width:700px;
+	}   
+}     
+
+
+@media (min-width: 400px){
+	#information > .jumbotron > .info_box > .gallery_box{
+		background-color: white;
+		min-height: 40px;
+		height: auto;
+	}   
+}
+
+@media (min-width: 400px){
+	#information > .jumbotron > .info_box > .gallery_box > .gallery_info{
+		padding-top: 10px;
+		height: 40px;
+	}   
+}
+
+#information > .jumbotron > .info_box > .gallery_box > .gallery_info > #gallery_span {
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: 20px;
+	float: left;
+}
+
+
+@media (min-width: 500px){
+	#information > .jumbotron > .info_box > .gallery_box > #gallery_content > .slider-for {
+  		width:500px;
+  		display:block;
+  		margin:0 auto;
+	}
+}
+
+#information > .jumbotron > .info_box > .gallery_box > #gallery_content > .slider-for div {
+	height:200px; 
+	margin: 0 8px 0;
+} 
+ 
+.slick-prev:before {
+	color: black;
+}    
+  
+.slick-next:before{ 
+	color: black;
+} 
+
+#information > .jumbotron > .info_box > .gallery_box > #gallery_content > .slider-for div img{
+	max-height: 100%;
+	max-width: 100%
+}
+
+@media (min-width: 400px){
+	#information > .jumbotron > .info_box > .comment_box{
+		background-color: white;
+		min-height: 40px;
+		height: auto;
+		padding-bottom: 40px;
+	}   
+}
+
+@media (min-width: 400px){
+	#information > .jumbotron > .info_box > .comment_box > .comment_info{
+		padding-top: 10px;
+		height: 40px;
+	}    
+}
+ 
+#information > .jumbotron > .info_box > .comment_box > .comment_info > #comment_span {
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: 20px;
+	float: left;
+}
+
+@media (min-width: 1100px){
+	#information > .jumbotron > .info_box > .comment_box > #comment_content{
+	    margin-top: 20px;
+	    margin-left: -50px;
+	    margin-right: 30px;
+	    padding-left: 80px;
+	}   
+}    
+
+@media (min-width: 400px){
+	#comment_exam {  
+	    background-color: gray;
+	    width:400px;
+	    height:400px;
+	    margin: 0 8px 0;
+	}
+}

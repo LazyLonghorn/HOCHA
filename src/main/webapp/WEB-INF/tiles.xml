@@ -19,7 +19,15 @@
 	<definition name="index" extends="layout">
 		<put-attribute name="content" value="/WEB-INF/views/index.jsp" />
 	</definition>
-
-
+	
+	<!-- mainView -->
+	<definition name="mainview" extends="layout">
+		<put-attribute name="content" value="/WEB-INF/views/mainview.jsp" />
+	</definition>
+	
+	<!-- profile -->
+	<definition name="profile" extends="layout">
+		<put-attribute name="content" value="/WEB-INF/views/profile.jsp" />
+	</definition>
 
 </tiles-definitions>

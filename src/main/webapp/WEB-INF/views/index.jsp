@@ -45,7 +45,17 @@
 							<li><span>OR</span></li>
 							<li class="line"></li>
 						</ul>
-						
+						<div id="naver_id_login"></div>
+  <!-- //네이버아이디로로그인 버튼 노출 영역 -->
+<script type="text/javascript">
+		var naver_id_login = new naver_id_login("LaU2gJC0IgXCDDp1JBkg", "http://localhost:8090/moviesocial/index.do");
+	  	var state = naver_id_login.getUniqState();
+	  	naver_id_login.setButton("white", 2,40);
+	  	naver_id_login.setDomain("http://localhost:8090/moviesocial/naver.do");
+	  	naver_id_login.setState(state);
+	  	naver_id_login.setPopup();
+	  	naver_id_login.init_naver_id_login();
+</script>
 					</div>
 				</div>
 			</div>
@@ -86,7 +96,7 @@
 						<ul>
 							<li class="line"></li>
 							<li><span>OR</span></li>
-							<li class="line"></li>
+							<li class="line"></li> 
 						</ul>
 						
 					</div>
