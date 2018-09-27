@@ -33,8 +33,9 @@
 	<!-- DAO 설정 -->
 	<!-- Service 설정 -->
 	<!-- Controller 설정 -->
-
 	<bean id="homeController" class="com.mycompany.moviesocial.HomeController">
+	</bean>
+	<bean id="searchController" class="com.mycompany.search.SearchController">
 	</bean>
 
 
