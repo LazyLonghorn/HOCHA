@@ -168,7 +168,7 @@ section{
 
 /*Fixed footer*/
 #default_footer{
-	width: 110%;
+	width: 100%;
 	margin-left: -15px;
 }
 #default_footer>.footer{
@@ -200,7 +200,7 @@ section{
 	color:#5D5D5D;
 }
 #default_footer>.navbar-fixed-bottom{
-	height: 18%;
+	height: 15%;
 }
 #default_footer>.navbar-fixed-bottom>.container-fluid>.navbar-header{
 	margin-top:18px;
