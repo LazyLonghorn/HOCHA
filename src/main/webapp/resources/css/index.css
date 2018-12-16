@@ -127,6 +127,40 @@ section{
 	height:600px;
 	margin : 0 auto;
 }
+#indexContent>#loginModal>.modal-dialog>.modal-content>.modal-body .user-input{
+	font-weight: bold;
+}
+
+#indexContent>#loginModal>.modal-dialog>.modal-content>.modal-body .close{
+	position:absolute;
+	right: 0;
+	margin-top: -45px;
+	margin-right: 70px;
+	visibility: hidden;
+}
+#indexContent>#loginModal>.modal-dialog>.modal-content>.modal-body .okIcon{
+	position:absolute;
+	right: 0;
+	margin-top: -50px;
+	margin-right: 25px;
+	background-color: #F6F6F6;
+	border: none;
+	visibility: hidden;
+}#indexContent>#loginModal>.modal-dialog>.modal-content>.modal-body .okIcon>span{
+	color:#00000030;
+}
+#indexContent>#loginModal>.modal-dialog>.modal-content>.modal-body .infoMsg{
+	height: 30px;
+	margin-bottom:10px;
+	display: none;
+}
+#indexContent>#loginModal>.modal-dialog>.modal-content>.modal-body .infoMsg>span{
+	margin-left: 20px;
+	font-weight: bold;
+	color:#DB0000;
+}
+
+
 #indexContent>#loginModal>.modal-dialog>.modal-content>.modal-body>.info_div{
 	margin-top:30px;
 }

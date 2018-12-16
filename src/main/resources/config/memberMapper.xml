@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="member">
+
+	<resultMap type="com.mycompany.dto.MemberDTO" id="memberDTO">
+		<result property="memberId" column="MEMBER_ID"/>
+		<result property="memberPasswd" column="MEMBER_PASSWD"/>
+	</resultMap>
+
+	<select id="loginPro" parameterType="com.mycompany.dto.MemberDTO" resultMap="memberDTO">
+		<!-- /*member.loginPro*/ -->
+		SELECT
+			MEMBER_ID,
+			MEMBER_PASSWD
+		FROM
+			HOCHA_MEMBER
+		WHERE
+			MEMBER_ID=#{memberId}
+	</select>
+
+</mapper>

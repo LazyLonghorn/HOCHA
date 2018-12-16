@@ -29,15 +29,25 @@
 	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
 		<constructor-arg ref="sqlSessionFactory" />
 	</bean>
-	
+	 
 	<!-- DAO 설정 -->
+	<bean id="loginDao" class="com.mycompany.login.LoginDaoImp">		
+		<property name="sqlSession" ref="sqlSession"></property>
+	</bean> 
+	
 	<!-- Service 설정 -->
+	<bean id="loginService" class="com.mycompany.login.LoginServiceImp">
+		<property name="dao" ref="LoginDao"></property>
+	</bean> 
+	 
 	<!-- Controller 설정 -->
-	<bean id="homeController" class="com.mycompany.moviesocial.HomeController">
+	<bean id="homeController" class="com.mycompany.moviesocial.HomeController">		
 	</bean>
 	<bean id="searchController" class="com.mycompany.search.SearchController">
 	</bean>
-
+	<bean id="loginController" class="com.mycompany.login.LoginController">
+		<property name="service" ref="loginService"></property>
+	</bean>
 
 	<!-- Tiles 설정 -->
 	<bean id="tilesViewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">

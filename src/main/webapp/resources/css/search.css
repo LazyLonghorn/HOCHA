@@ -164,6 +164,11 @@ section{
 	margin-top:25px;
 	margin-right: 30px;	
 }
+@media screen and (max-height: 580px)  {
+	#searchContent>.movie_result>ul:last-of-type>li:last-of-type{
+		display: none;
+	}
+}
 #searchContent>.movie_result>ul>li>.movie_Img{
 	float: left;
 }
@@ -187,6 +192,7 @@ section{
 #searchContent>.user_result{
 	height: 60%;
 	margin-top: 50px;
+	margin-bottom: 150px;
 }
 #searchContent>.user_result>p{
 	margin-top:20px;
@@ -204,20 +210,26 @@ section{
 	list-style: none;
 	height: 20%;
 }
-#searchContent>.user_result>ul:last-of-type{
-	height: 30%;
-}
 @media screen and (max-width: 867px) {
 #searchContent>.user_result>.hidden-Result{
 	display: none;
 }
 }
+#searchContent>.user_result>ul:last-of-type{
+	height: 30%;
+}
+
 #searchContent>.user_result>ul>li{
 	width:380px;
 	float:left;
 	display: inline;
 	margin-top:20px;
 	margin-right: 30px;	
+}
+@media screen and (max-height: 580px)  {
+	#searchContent>.user_result>ul:last-of-type>li:last-of-type{
+		display: none;
+	}
 }
 #searchContent>.user_result>ul>li>.user_Img{
 	float: left;
@@ -349,13 +361,13 @@ section{
 	height: 15%;
 }
 #search_footer>.navbar-fixed-bottom>.container-fluid>.navbar-header{
-	margin-top:18px;
-	margin-left:25px;
+	margin-top:1%;
+	margin-left:2.5%;
 	color:white;
 }
 #search_footer>.navbar-fixed-bottom>.container-fluid>.navbar-right{
-	margin-top:23px;
-	margin-right:25px;
+	margin-top:2%;
+	margin-right:2.5%;
 }
 #search_footer>.navbar-fixed-bottom>.container-fluid>.navbar-right>li:first-of-type{
 	margin-right:25px;

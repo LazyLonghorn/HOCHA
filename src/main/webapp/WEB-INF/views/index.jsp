@@ -29,12 +29,31 @@
 				</div>
 				<div class="modal-body">
 					<form id="loginFrm" name="loginFrm">
-						<div class="form-group">
-						    <input type="text" class="form-control" id="login_email" name="login_email"
+						<div class="form-group">							
+							<input type="text" class="form-control user-input" id="login_email" name="memberId"
 						    	placeholder="이메일"/>
-						    <input type="password" class="form-control" id="login_passwd" name="login_passwd"
+						   	<button type="button" class="close email-close" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>							
+						    <button type="button" class="btn btn-default okIcon email-okIcon">
+							  <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+							</button>
+							<div class="infoMsg">
+								<span></span>
+							</div>
+						    <input type="password" class="form-control user-input" id="login_passwd" name="memberPasswd"
 						    	placeholder="비밀번호"/>
+						    <button type="button" class="close passwd-close" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>							
+						    <button type="button" class="btn btn-default okIcon passwd-okIcon">
+							  <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+							</button>
+							<div class="infoMsg">
+								<span></span>
+							</div>
 						    <input type="submit" class="form-control" id="loginBtn" value="로그인"/>
+						    
 						</div>
 					</form>
 					<div class="info_div">

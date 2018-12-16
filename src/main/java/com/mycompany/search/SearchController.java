@@ -9,5 +9,5 @@ public class SearchController {
 	@RequestMapping("/search.do")
 	public String searchPage(Model model) {
 		return "search";
-	}
+	} 
 }
