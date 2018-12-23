@@ -5,6 +5,9 @@
 	padding: 0;
 	font-family: 'Nanum Gothic', sans-serif;
 }
+body{
+	padding-right: 0 !important
+}
 
 /*Index Header*/
 #default_header{
@@ -29,6 +32,11 @@
 }
 #default_header .jumbotron>.navbar-inverse .navbar-collapse>ul>li{
 	margin-right: 20px;
+}
+#default_header .jumbotron>.navbar-inverse .navbar-collapse>ul>.login-pfImg{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
 }
 #default_header .jumbotron>.navbar-inverse .navbar-collapse>ul>li>button{
 	font-size: 15px;
@@ -234,7 +242,7 @@ section{
 	color:#5D5D5D;
 }
 #default_footer>.navbar-fixed-bottom{
-	height: 15%;
+	height: 100px;
 }
 #default_footer>.navbar-fixed-bottom>.container-fluid>.navbar-header{
 	margin-top:18px;
@@ -258,8 +266,18 @@ section{
 }
 
 
-
-
+/*Info Modal*/
+#indexContent>#msgModal .modal-content{
+	text-align: center;
+    padding-top: 20px;
+    width: 300px;
+    height: 150px;
+    margin-top: 300px;
+    margin-left: -4%;
+}
+#indexContent>#msgModal .modal-content>.col-md-12:last-child{
+	margin-top: 20%;
+}
 
 
 

@@ -1,6 +1,8 @@
 package com.mycompany.login;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,16 +17,15 @@ public class LoginController {
 	public void setService(LoginService service) {
 		this.service = service;
 	}
-	 
+	// Login Process
 	@RequestMapping(value="/login.do", method=RequestMethod.POST)	
-	public @ResponseBody String LoginPro(MemberDTO member, HttpServletResponse res) {
-		System.out.println("Login Pro Start");
+	public @ResponseBody String LoginPro(MemberDTO member, HttpServletRequest req, HttpServletResponse res) {
+		System.out.println("==============Login Pro Start==============");
 		System.out.println("member : " + member.getMemberId());
 		System.out.println("member : " + member.getMemberPasswd());
-		
-		int result = service.loginPro(member);
-		
-		return "Success";
+		String result = service.loginPro(member, req);
+		System.out.println("============================================");
+		return result;
 	}   
 	
 	

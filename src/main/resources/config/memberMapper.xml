@@ -7,17 +7,20 @@
 	<resultMap type="com.mycompany.dto.MemberDTO" id="memberDTO">
 		<result property="memberId" column="MEMBER_ID"/>
 		<result property="memberPasswd" column="MEMBER_PASSWD"/>
+		<result property="memberName" column="MEMBER_NAME"/>
+		<result property="memberNick" column="MEMBER_NICK"/>
+		<result property="memberPfimg" column="MEMBER_PFIMG"/>
 	</resultMap>
 
 	<select id="loginPro" parameterType="com.mycompany.dto.MemberDTO" resultMap="memberDTO">
 		<!-- /*member.loginPro*/ -->
 		SELECT
 			MEMBER_ID,
-			MEMBER_PASSWD
+			MEMBER_PASSWD,
+			MEMBER_NICK
 		FROM
 			HOCHA_MEMBER
 		WHERE
 			MEMBER_ID=#{memberId}
-	</select>
-
+	</select> 
 </mapper>

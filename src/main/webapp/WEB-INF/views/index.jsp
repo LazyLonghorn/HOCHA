@@ -18,7 +18,7 @@
 	</div>
 	
 	<!-- Login Modal -->
-	<div class="modal fade" id="loginModal" role="dialog">
+	<div class="modal fade login-modal" id="loginModal" role="dialog">
 		<div class="modal-dialog">
 			
 			<!-- Modal Content -->
@@ -73,7 +73,7 @@
 	</div>
     
     <!-- Join Modal -->
-	<div class="modal fade" id="joinModal" role="dialog">
+	<div class="modal fade login-modal" id="joinModal" role="dialog">
 		<div class="modal-dialog">
 			
 			<!-- Modal Content -->
@@ -113,9 +113,26 @@
 			</div>
 			<!-- End Modal Content -->
     	</div>
-	</div>  
-      
+	</div>
 
-	
-	
+
+	<!-- Msg Info Modal -->
+	<div id="msgModal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-sm">
+	    <div class="modal-content">
+	    	<div class="col-md-12">
+	    		
+	    	</div>
+	    	<div class="col-md-12">
+	    		<button type="button" class="btn btn-primary infomsg-btn">닫기</button>
+	    	</div>
+	      	
+	    </div>
+	  </div>
+	</div>
+
+
+
+
+
 </div>

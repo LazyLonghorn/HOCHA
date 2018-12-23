@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	
+	
 	var emailChk = false;
 	var passwdChk = false;
 	
@@ -19,6 +21,7 @@ $(document).ready(function(){
 		if(inputEmail == ''){
 			$(this).next().css('visibility','hidden');
 			$(this).next().next().css('visibility','hidden');
+			emailChk = false;
 			return ;
 		}
 		
@@ -32,6 +35,8 @@ $(document).ready(function(){
 			$(this).next().next().children().css('color','#C90000');			
 			$(this).next().next().next().css('display','inherit');
 			$(this).next().next().next().children().text(msg);
+			
+			emailChk = false;
 		}
 		else{			
 			$(this).next().next().children().css('color','#00B700');
@@ -61,6 +66,7 @@ $(document).ready(function(){
 		if(inputPasswd == ''){
 			$(this).next().css('visibility','hidden');
 			$(this).next().next().css('visibility','hidden');
+			passwdChk = false;
 			return ;
 		}
 		
@@ -76,6 +82,8 @@ $(document).ready(function(){
 			$(this).next().next().children().css('color','#C90000');			
 			$(this).next().next().next().css('display','inherit');
 			$(this).next().next().next().children().text(msg);
+			
+			passwdChk = false;
 		}
 		else{			
 			$(this).next().next().children().css('color','#00B700');
@@ -91,7 +99,7 @@ $(document).ready(function(){
 			$(this).next().css('visibility','hidden');
 		}
 	});
-	// close Btn
+	// Input close Btn
 	$('#indexContent>#loginModal>.modal-dialog>.modal-content>.modal-body .close').on('click', function(e){
 		e.preventDefault();
 		$(this).prev().val('');
@@ -103,27 +111,39 @@ $(document).ready(function(){
 	// Login Btn
 	$('#loginModal #loginFrm #loginBtn').on('click', function(e){
 		e.preventDefault();
+		
 		var memberId = $('#loginModal #loginFrm #login_email').val(); 
 		var memberPasswd = $('#loginModal #loginFrm #login_passwd').val();
 		
 		if(emailChk && passwdChk){
-			console.log('Login Process');
-			
 			$.ajax({
 				type:'POST',
 				url:'login.do',
 				dataType:'text',
 				data:'memberId='+memberId+'&memberPasswd='+memberPasswd,
 				success: function(res){
-					console.log(res);
-					
+					switch(res){
+						case "-1":{							
+							$('#msgModal .modal-content>.col-md-12:eq(0)').text('존재하지 않는 아이디입니다.');
+							$('#msgModal').modal('show');
+							return ;
+						}
+						case "0":{							
+							$('#msgModal .modal-content>.col-md-12:eq(0)').text('비밀번호가 일치하지 않습니다.');
+							$('#msgModal').modal('show');
+							return ;
+						}
+						default:{
+							location.reload();
+						}
+					}
 				}		
 			});
 			
 		}
 	
 	});
-	console.log($('#loginModal .info_div .info:eq(1) a').text());
+	
 	$('#loginModal .info_div .info:eq(1) a').on('click', function(e){
 		e.preventDefault();
 		$('#loginModal').modal('hide');
@@ -162,5 +182,8 @@ $(document).ready(function(){
 		
 	}
 	
+	$('.infomsg-btn').on('click', function(){
+		$('#msgModal').modal('hide');
+	});
 	
 });
