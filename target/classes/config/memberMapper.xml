@@ -8,19 +8,42 @@
 		<result property="memberId" column="MEMBER_ID"/>
 		<result property="memberPasswd" column="MEMBER_PASSWD"/>
 		<result property="memberName" column="MEMBER_NAME"/>
-		<result property="memberNick" column="MEMBER_NICK"/>
 		<result property="memberPfimg" column="MEMBER_PFIMG"/>
 	</resultMap>
 
-	<select id="loginPro" parameterType="com.mycompany.dto.MemberDTO" resultMap="memberDTO">
-		<!-- /*member.loginPro*/ -->
+	<select id="findUser" parameterType="com.mycompany.dto.MemberDTO" resultMap="memberDTO">
+		<!-- /*member.findUser*/ -->
 		SELECT
-			MEMBER_ID,
-			MEMBER_PASSWD,
-			MEMBER_NICK
+			MEMBER_ID
+			,MEMBER_PASSWD
+			,MEMBER_NAME
+			,MEMBER_PFIMG
 		FROM
 			HOCHA_MEMBER
 		WHERE
 			MEMBER_ID=#{memberId}
 	</select> 
+	
+	<insert id="join" parameterType="com.mycompany.dto.MemberDTO">
+		<!-- /*member.join*/ -->
+		INSERT INTO
+			HOCHA_MEMBER
+			(MEMBER_NUM
+			,MEMBER_GRADE
+			,MEMBER_ID
+			,MEMBER_PASSWD
+			,MEMBER_NAME
+			,MEMBER_PFIMG
+			)
+		VALUES
+		(HOCHA_MEMBER_SEQ.NEXTVAL
+		,0
+		,#{memberId}
+		,#{memberPasswd}
+		,#{memberName}
+		,'default_PfImg.jpg'
+		)
+	</insert>
+	
+	
 </mapper>

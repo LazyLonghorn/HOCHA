@@ -12,7 +12,13 @@ public class LoginDaoImp implements LoginDAO{
 	}
 
 	@Override
-	public MemberDTO loginPro(MemberDTO member) {
-		return sqlSession.selectOne("member.loginPro",member);
+	public MemberDTO findUser(MemberDTO member) {
+		return sqlSession.selectOne("member.findUser",member);
+	}
+	
+	@Override
+	public void joinPro(MemberDTO member) {
+		// TODO Auto-generated method stub
+		sqlSession.insert("member.join",member);
 	}
 }

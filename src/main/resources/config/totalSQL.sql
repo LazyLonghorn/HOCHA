@@ -14,7 +14,6 @@ CREATE table hocha_member(
 	member_id varchar2(1000),
 	member_passwd varchar2(1000),
 	member_name varchar2(300),
-	member_nick varchar2(1000),
 	member_pfimg varchar2(2000)
 );
 
@@ -27,4 +26,5 @@ nocycle;
 SELECT * FROM hocha_member
 DROP TABLE hocha_member
 DROP SEQUENCE hocha_member_seq
-INSERT INTO HOCHA_MEMBER VALUES(hocha_member_seq.nextval, 0, 'abcd12@naver.com','aaaaaaa1!','a','홍길동','default.jpg');
+INSERT INTO HOCHA_MEMBER VALUES(hocha_member_seq.nextval, 0, 'abcd12@naver.com','aaaaaaa1!','홍길동','default.jpg');
+INSERT INTO HOCHA_MEMBER VALUES(hocha_member_seq.nextval, 0, 'abcd12@naver.com','aaaaaa11!','홍길동','default_PfImg.jpg');

@@ -27,6 +27,28 @@ public class LoginController {
 		System.out.println("============================================");
 		return result;
 	}   
+	 
+	// Logout Process
+	@RequestMapping(value="/logout.do", method=RequestMethod.GET)	
+	public @ResponseBody void LogoutPro(HttpServletRequest req) {
+		service.logoutPro(req);
+	} 
 	
+	// Email Chk Process
+	@RequestMapping(value="/joinEmailChk.do", method=RequestMethod.POST)	
+	public @ResponseBody String JoinEamilChkPro(MemberDTO member) {
+		System.out.println("MemberId : " + member.getMemberId());
+		String result = service.emailChk(member);		
+		return result;
+	} 
 	
+	// Join Process
+	@RequestMapping(value="/join.do", method=RequestMethod.POST)	
+	public @ResponseBody String JoinPro(MemberDTO member) {
+		System.out.println("==============Join Pro Start==============");
+		service.joinPro(member);
+		System.out.println("============================================");
+		return "1";
+	}
+		
 }

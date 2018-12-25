@@ -85,18 +85,47 @@
 				<div class="modal-body">
 					<form id="joinFrm" name="joinFrm">
 						<div class="form-group">
-						    <input type="text" class="form-control" id="join_name" name="join_name"
+						    <input type="text" class="form-control" id="join_name" name="memberName"
 						    	placeholder="이름"/>
-						    <input type="text" class="form-control" id="join_email" name="join_email"
+						    <button type="button" class="close email-close" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>							
+						    <button type="button" class="btn btn-default okIcon email-okIcon">
+							  <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+							</button>
+							<div class="infoMsg">
+								<span></span>
+							</div>
+						    <input type="text" class="form-control" id="join_email" name="memberId"
 						    	placeholder="이메일"/>
-						    <input type="password" class="form-control" id="join_passwd" name="join_passwd"
+						    <button type="button" class="close email-close" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>							
+						    <button type="button" class="btn btn-default okIcon email-okIcon">
+							  <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+							</button>
+							<div class="infoMsg">
+								<span></span>
+							</div>
+						    <input type="password" class="form-control" id="join_passwd" name="memberPasswd"
 						    	placeholder="비밀번호"/>
-		
+							<button type="button" class="close email-close" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>							
+						    <button type="button" class="btn btn-default okIcon email-okIcon">
+							  <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+							</button>
+							<div class="infoMsg">
+								<span></span>
+							</div>
 						    <div class="agree">
 						    	<input type="checkbox" class="form-control" id="agreeChk" name="agreeChk" value="Chk" />
 							    <span><a href="#">서비스 이용 약관</a> 과 <a href="#">개인정보 보호 정책</a> 에</span>
 							    <span>&nbsp;동의합니다.</span>	
 						    </div>
+						    <div class="infoMsg">
+								<span></span>
+							</div>
 						    <input type="submit" class="form-control" id="joinBtn" value="회원가입"/>
 						</div>
 					</form>

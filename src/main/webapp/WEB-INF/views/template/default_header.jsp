@@ -17,11 +17,10 @@
 				<div class="collapse navbar-collapse" id="indexNavbar">
 					<ul class="nav navbar-nav navbar-right">
 						<c:choose>
-							<c:when test="${!empty sessionScope.loginNick}">
+							<c:when test="${!empty sessionScope.loginName}">
 								<!-- Login -->
-								<li><button class="btn navbar-btn" data-toggle="modal" 
-										data-target="#loginModal">로그아웃</button></li>
-								<li class="login-pfImg"><img src=""></li>
+								<li><button class="btn navbar-btn logout">로그아웃</button></li>
+								<li class="login-pfImg"><img src="./resources/images/member/${sessionScope.loginPfImg}"></li>
 							</c:when>
 							<c:otherwise>
 								<li><button class="btn navbar-btn" data-toggle="modal" 

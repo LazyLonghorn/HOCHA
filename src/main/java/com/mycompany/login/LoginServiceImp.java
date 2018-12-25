@@ -14,13 +14,14 @@ public class LoginServiceImp implements LoginService{
 	@Override
 	public String loginPro(MemberDTO member, HttpServletRequest req) {
 		HttpSession session = req.getSession();
-		MemberDTO findUser = dao.loginPro(member);
+		MemberDTO findUser = dao.findUser(member);
 		if(findUser==null) {
 			return "-1";
 		}
 		else {
 			if(findUser.getMemberPasswd().equals(member.getMemberPasswd())) {
-				session.setAttribute("loginNick", findUser.getMemberNick());
+				session.setAttribute("loginName", findUser.getMemberName());
+				session.setAttribute("loginPfImg", findUser.getMemberPfimg());
 				return "1";
 			}
 			else {
@@ -28,4 +29,33 @@ public class LoginServiceImp implements LoginService{
 			}
 		}
 	}
+	
+	@Override
+	public void logoutPro(HttpServletRequest req) {
+		// TODO Auto-generated method stub
+		HttpSession session = req.getSession();
+		session.invalidate();
+	}
+	
+	@Override
+	public String emailChk(MemberDTO member) {
+		String returnTxt = null;
+		try {
+			MemberDTO findUser = dao.findUser(member);
+			if(member.getMemberId().equals(findUser.getMemberId())) {
+				returnTxt = "0";
+			}
+		}catch(NullPointerException e) {
+			returnTxt = "1";
+		}	
+		return returnTxt;
+	}
+	
+	@Override
+	public void joinPro(MemberDTO member) {
+		// TODO Auto-generated method stub
+		dao.joinPro(member);
+	}
+	
+	
 }

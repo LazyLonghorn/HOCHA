@@ -4,7 +4,6 @@ public class MemberDTO {
 	private String memberId;
 	private String memberPasswd;
 	private String memberName;
-	private String memberNick;
 	private String memberPfimg;
 	
 	
@@ -32,14 +31,6 @@ public class MemberDTO {
 
 	public void setMemberName(String memberName) {
 		this.memberName = memberName;
-	}
-
-	public String getMemberNick() {
-		return memberNick;
-	}
-
-	public void setMemberNick(String memberNick) {
-		this.memberNick = memberNick;
 	}
 
 	public String getMemberPfimg() {
