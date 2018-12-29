@@ -12,12 +12,12 @@
 <title>Extra Project</title>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="./resources/css/<tiles:getAsString name="css" />.css" type="text/css" />
+<link rel="stylesheet" href="/moviesocial/resources/css/<tiles:getAsString name="css" />.css" type="text/css" />
 
 
 <script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="./resources/js/<tiles:getAsString name="js"/>.js"></script>
+<script src="/moviesocial/resources/js/<tiles:getAsString name="js"/>.js"></script>
 
 
 </head>

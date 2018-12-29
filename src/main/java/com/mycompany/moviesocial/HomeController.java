@@ -20,10 +20,10 @@ public class HomeController {
 	 */ 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Model model) {
-		return "redirect:/index.do";
+		return "redirect:/index";
 	}     
 	
-	@RequestMapping("/index.do") 
+	@RequestMapping("/index") 
 	public String index(Model model) {
 		return "index"; 
 	}  

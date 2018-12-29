@@ -45,5 +45,15 @@
 		)
 	</insert>
 	
+	<select id="searchUser" parameterType="String" resultMap="memberDTO">
+		<!-- /*member.searchUser*/ -->
+		SELECT
+			MEMBER_NAME
+			,MEMBER_PFIMG
+		FROM
+			HOCHA_MEMBER
+		WHERE
+			MEMBER_NAME=#{memberName}
+	</select>
 	
 </mapper>

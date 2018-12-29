@@ -20,7 +20,9 @@
 							<c:when test="${!empty sessionScope.loginName}">
 								<!-- Login -->
 								<li><button class="btn navbar-btn logout">로그아웃</button></li>
-								<li class="login-pfImg"><img src="./resources/images/member/${sessionScope.loginPfImg}"></li>
+								<li class="login-pfImg">
+									<img src="/moviesocial/resources/images/member/${sessionScope.loginPfImg}">
+								</li>
 							</c:when>
 							<c:otherwise>
 								<li><button class="btn navbar-btn" data-toggle="modal" 

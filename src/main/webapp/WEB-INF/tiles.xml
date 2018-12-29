@@ -35,8 +35,15 @@
 	<!-- search -->
 	<definition name="search" extends="searchLayout">
 		<put-attribute name="css" value="search" />
-		<put-attribute name="js" value="" />
+		<put-attribute name="js" value="search" />
 		<put-attribute name="content" value="/WEB-INF/views/search.jsp" />
+	</definition>
+	
+	<!-- userInfo -->
+	<definition name="userInfo" extends="searchLayout">
+		<put-attribute name="css" value="userInfo"/>
+		<put-attribute name="js" value="userInfo"/>
+		<put-attribute name="content" value="/WEB-INF/views/userInfo.jsp"/>
 	</definition>
 
 </tiles-definitions>

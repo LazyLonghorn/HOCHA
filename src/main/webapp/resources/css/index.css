@@ -30,17 +30,28 @@ body{
 	border-color: rgba(255, 255,255,0.0);
 	padding-top: 20px;
 }
+
+@media(max-width: 765px){
+#default_header .jumbotron>.navbar-inverse .navbar-header{
+	display: none;
+}
+}
+
+
 #default_header .jumbotron>.navbar-inverse .navbar-collapse>ul>li{
 	margin-right: 20px;
 }
+
 #default_header .jumbotron>.navbar-inverse .navbar-collapse>ul>.login-pfImg{
-	width: 50px;
-	height: 50px;	
+	width: 40px;
+	height: 40px;	
 }
 #default_header .jumbotron>.navbar-inverse .navbar-collapse>ul>.login-pfImg>img{
 	width: 100%;
 	border-radius: 50%;
-}
+}	
+
+
 #default_header .jumbotron>.navbar-inverse .navbar-collapse>ul>li>button{
 	font-size: 15px;
 }
@@ -66,12 +77,30 @@ section{
 }
 #indexContent>#searchForm>.form-group>label>img{
 	height: 30px;
+	position:absolute;
+	margin-top:8px;
+	margin-left:10px;
 	margin-bottom: 5px;
 }
 #indexContent>#searchForm>.form-group>label>#searchWord{
 	width: 50%;
 	height: 45px;
+	padding-left:50px;
 	display: inline;
+}
+@media(max-width: 1024px){
+#indexContent>#searchForm>.form-group>label>#searchWord{
+	width: 65%;
+	height: 45px;
+	display: inline;
+}	
+}
+@media(max-width: 480px){
+#indexContent>#searchForm>.form-group>label>#searchWord{
+	width: 80%;
+	height: 45px;
+	display: inline;
+}	
 }
 #indexContent>#midCotainer{
 	width:50%;
@@ -247,13 +276,12 @@ section{
 	height: 250px;
 }
 #default_footer>.footer>div{
-	width: 43%;
+	width: 540px;
 	height: 30%;
-	margin-left: 25%;
+	margin:0 auto;
 }
 #default_footer>.footer>div:first-of-type>p{
 	padding-top: 20px;
-	padding-left: 10px;
 }
 #default_footer>.footer>div:first-of-type>p>span{
 	color:#FF5E00;
@@ -264,7 +292,6 @@ section{
 	font-weight: bold;
 }
 #default_footer>.footer>div:last-of-type>p{
-	padding-left: 10px;
 	color:#BDBDBD;
 	font-weight: bold;
 }

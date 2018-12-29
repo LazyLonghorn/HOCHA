@@ -31,13 +31,19 @@
 	</bean>
 	 
 	<!-- DAO 설정 -->
-	<bean id="LoginDao" class="com.mycompany.login.LoginDaoImp">		
+	<bean id="loginDao" class="com.mycompany.login.LoginDaoImp">		
+		<property name="sqlSession" ref="sqlSession"></property>
+	</bean> 
+	<bean id="memberInfoDao" class="com.mycompany.memberInfo.MemberInfoDaoImp">		
 		<property name="sqlSession" ref="sqlSession"></property>
 	</bean> 
 	
 	<!-- Service 설정 -->
 	<bean id="loginService" class="com.mycompany.login.LoginServiceImp">
-		<property name="dao" ref="LoginDao"></property>
+		<property name="dao" ref="loginDao"></property>
+	</bean> 
+	<bean id="memberInfoService" class="com.mycompany.memberInfo.MemberInfoServiceImp">
+		<property name="dao" ref="memberInfoDao"></property>
 	</bean> 
 	 
 	<!-- Controller 설정 -->
@@ -47,6 +53,9 @@
 	</bean>
 	<bean id="loginController" class="com.mycompany.login.LoginController">
 		<property name="service" ref="loginService"></property>
+	</bean>
+	<bean id="memberInfoController" class="com.mycompany.memberInfo.MemberInfoController">
+		<property name="service" ref="memberInfoService"></property>
 	</bean>
 
 	<!-- Tiles 설정 -->

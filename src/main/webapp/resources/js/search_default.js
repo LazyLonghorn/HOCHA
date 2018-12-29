@@ -110,7 +110,7 @@ $(document).ready(function(){
 		if(emailChk && passwdChk){
 			$.ajax({
 				type:'POST',
-				url:'login',
+				url:'/moviesocial/login',
 				dataType:'text',
 				data:'memberId='+memberId+'&memberPasswd='+memberPasswd,
 				success: function(res){
@@ -205,7 +205,7 @@ $(document).ready(function(){
 		// 이메일 이미 가입 여부 확인하기
 		$.ajax({
 			type:'POST',
-			url:'joinEmailChk',
+			url:'/moviesocial/joinEmailChk',
 			data:'memberId='+inputEmail,
 			dataType:'text',
 			success:function(res){
@@ -336,7 +336,7 @@ $(document).ready(function(){
 			var param = frm.serialize();
 			$.ajax({
 				type:'POST',
-				url:'join',
+				url:'/moviesocial/join',
 				dataType:'json',
 				data:param,
 				success:function(res){
@@ -431,17 +431,6 @@ $(document).ready(function(){
 		$('#joinModal').modal('hide');
 	});
 	
-	
-	// Logout Func
-	$('.logout').on('click', function(){
-		console.log('Logout Process');
-		$.ajax({
-			url:'logout',
-			success:function(res){
-				location.href='index';
-			}
-		});
-	});
 	
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	

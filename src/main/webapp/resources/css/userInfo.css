@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+/*Header*/
+header{
+	height: 100px;
+}
+#search_header{
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 100%;
+}
+#search_header>.navbar-inverse{
+	height:10%;
+	border-radius : 0;
+	border-color: white white #EAEAEA white;
+	background-color: white;
+}
+#search_header>.navbar-inverse>.container-fluid{
+	height: 100%;
+}
+#search_header>.navbar-inverse>.container-fluid>.navbar-header{
+	width: 75%;
+	height: 100%;
+}
+#search_header>.navbar-inverse>.container-fluid>.navbar-header>.hidden-xs{
+	width:23%;
+	height:100%;
+	float:left;
+	background-color: red;
+}
+#search_header>.navbar-inverse>.container-fluid>.navbar-header>#searchForm{
+	width:100%;
+	height:100%;
+	background-color: blue;
+}
+#search_header>.navbar-inverse>.container-fluid>.navbar-header>#searchForm>.form-group{
+	width:75%;
+	height: 100%;
+	float: left;
+}
+#search_header>.navbar-inverse>.container-fluid>.navbar-header>#searchForm>.form-group>.searchBar{
+	width:100%;
+	height: 100%;
+}
+#search_header>.navbar-inverse>.container-fluid>.navbar-header>#searchForm>.form-group>.searchBar>img{
+	width:20px;
+	margin-top:25px;
+	margin-left:11.5%;
+	position:absolute;
+	float: left;
+}
+#search_header>.navbar-inverse>.container-fluid>.navbar-header>#searchForm>.form-group>.searchBar>input{
+	width: 80%;
+	margin-top: 18px;
+	margin-left: 20%;
+	padding-left: 50px;
+}
+#search_header>.navbar-inverse>.container-fluid>.navbar-header>button{
+	position: absolute;
+	top:0;
+	right: 0;
+	margin-top: 2.5%;
+}
+#search_header>.navbar-inverse>.container-fluid>.navbar-header>button>span{
+	background-color: black;
+}
+#search_header>.navbar-inverse .navbar-collapse>ul{
+	margin-top: 1%;
+}
+#search_header>.navbar-inverse .navbar-collapse>ul>li{
+	text-align:right;
+	margin-right: 20px;
+}
+#search_header>.navbar-inverse .navbar-collapse>ul>.login-pfImg{
+	width: 40px;
+	height: 40px;	
+}
+#search_header>.navbar-inverse .navbar-collapse>ul>.login-pfImg>img{
+	width: 100%;
+	border-radius: 50%;
+}
+#search_header>.navbar-inverse .navbar-collapse>ul>li>button{
+	font-size: 15px;
+	font-weight: bold;
+}
+#search_header>.navbar-inverse .navbar-collapse>ul>li:first-child>button{
+	background-color: rgba(255,255,255,0.0);
+	color:#F15F5F;
+}
+
+/*Content*/
+#memberContent>.myPageDiv{
+	background-color: yellow;
+	width: 60%;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+#memberContent>.myPageDiv button{
+	float: right;
+	background: none;
+	border: none;
+}
+#memberContent>.infoDiv{
+	border : 1px solid #EAEAEA;
+	width:60%;
+	height:400px;
+	margin: 0 auto;
+}
+#memberContent>.infoDiv>.pfImg{
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	margin-left: 20px;
+	margin-top: -30px;
+}
+#memberContent>.infoDiv>p{
+	width:90%;
+	margin-left: 20px;
+	border-bottom: 1px solid #EAEAEA;
+}
+#memberContent>.infoDiv>.member{
+	margin-top: 10px;
+	height: 80px;
+}
+#memberContent>.infoDiv>.member>span:first-child{
+	font-size: 20px;
+	font-weight: bold;
+}
+#memberContent>.infoDiv>.analysis{
+	height: 40px;
+}
+#memberContent>.infoDiv>ul{
+	list-style: none;
+	width: 95%;
+	height: 180px;
+	margin-top: 30px;
+	margin-left: 20px;	
+}
+#memberContent>.infoDiv>ul>li{
+	border: 1px solid #EAEAEA;
+	border-radius:6%;
+	width: 30%;
+	height: 90%;
+	float: left;
+	margin-right: 15px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+
+
+/*Modal*/
+#userInfoModal .modal-content{
+	margin: 0 auto;
+	margin-top: 100px;
+	width:400px;
+	height: 700px;
+}
+#userInfoModal .modal-content .modal-header #userModalClose{
+	margin-left:-10px;
+	border: none;
+}
+#userInfoModal .modal-content .modal-header #userModalClose>span{
+	color:#FF7E7E;
+}
+#userInfoModal .modal-content .modal-header h4{
+	margin-top:20px;
+	font-weight: bold;
+	font-size: 25px;
+}
+#userInfoModal .modal-content .modal-body>ul{
+	list-style: none;
+}
+#userInfoModal .modal-content .modal-body>ul>li{
+	width:95%;
+	height:50px;
+	margin-top:10px;
+	border-bottom: 1px solid #EAEAEA;
+}
+#userInfoModal .modal-content .modal-body>ul>.imgSetBtn{
+	margin-top: 10px;
+}
+#userInfoModal .modal-content .modal-body>ul>.logoutBtn {
+	margin-top: 300px;
+}
+#userInfoModal .modal-content .modal-body>ul>li>.userInfoBtn{
+	background : none;
+	border: none;
+	font-size: 18px;
+	font-weight: bold;
+}
+

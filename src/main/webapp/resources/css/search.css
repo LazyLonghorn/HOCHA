@@ -16,7 +16,7 @@ header{
 	width: 100%;
 }
 #search_header>.navbar-inverse{
-	height:15%;
+	height:10%;
 	border-radius : 0;
 	border-color: white white #EAEAEA white;
 	background-color: white;
@@ -76,6 +76,14 @@ header{
 #search_header>.navbar-inverse .navbar-collapse>ul>li{
 	text-align:right;
 	margin-right: 20px;
+}
+#search_header>.navbar-inverse .navbar-collapse>ul>.login-pfImg{
+	width: 40px;
+	height: 40px;	
+}
+#search_header>.navbar-inverse .navbar-collapse>ul>.login-pfImg>img{
+	width: 100%;
+	border-radius: 50%;
 }
 #search_header>.navbar-inverse .navbar-collapse>ul>li>button{
 	font-size: 15px;
@@ -313,6 +321,38 @@ section{
 	height:600px;
 	margin : 0 auto;
 }
+#indexContent>#loginModal>.modal-dialog>.modal-content>.modal-body .user-input{
+	font-weight: bold;
+}
+
+#indexContent>#loginModal>.modal-dialog>.modal-content>.modal-body .close{
+	position:absolute;
+	right: 0;
+	margin-top: -45px;
+	margin-right: 70px;
+	visibility: hidden;
+}
+#indexContent>#loginModal>.modal-dialog>.modal-content>.modal-body .okIcon{
+	position:absolute;
+	right: 0;
+	margin-top: -50px;
+	margin-right: 25px;
+	background-color: #F6F6F6;
+	border: none;
+	visibility: hidden;
+}#indexContent>#loginModal>.modal-dialog>.modal-content>.modal-body .okIcon>span{
+	color:#00000030;
+}
+#indexContent>#loginModal>.modal-dialog>.modal-content>.modal-body .infoMsg{
+	height: 30px;
+	margin-bottom:10px;
+	display: none;
+}
+#indexContent>#loginModal>.modal-dialog>.modal-content>.modal-body .infoMsg>span{
+	margin-left: 20px;
+	font-weight: bold;
+	color:#DB0000;
+}
 #indexContent>#loginModal>.modal-dialog>.modal-content>.modal-body>.info_div{
 	margin-top:30px;
 }
@@ -349,6 +389,36 @@ section{
 	margin-top:30px;
 	margin-bottom:30px;
 	text-align:center;
+}
+#indexContent>#joinModal>.modal-dialog>.modal-content>.modal-body .close{
+	position:absolute;
+	right: 0;
+	margin-top: -45px;
+	margin-right: 70px;
+	visibility: hidden;
+}
+#indexContent>#joinModal>.modal-dialog>.modal-content>.modal-body .okIcon{
+	position:absolute;
+	right: 0;
+	margin-top: -48px;
+	margin-right: 27px;
+	background-color: #F6F6F6;
+	border: none;
+	visibility: hidden;
+}
+#indexContent>#joinModal>.modal-dialog>.modal-content>.modal-body .okIcon>span{
+	color:#00000030;
+}
+#indexContent>#joinModal>.modal-dialog>.modal-content>.modal-body .infoMsg{
+	height: 30px;
+	margin-top: 5px;
+	margin-left: 35px;
+	margin-bottom:10px;
+	display: none;
+}
+#indexContent>#joinModal>.modal-dialog>.modal-content>.modal-body .infoMsg>span{
+	font-weight: bold;
+	color:#DB0000;
 }
 
 
